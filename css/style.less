@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: 'Ubuntu', sans-serif;
+    color: #202020;
+}
+
+.page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+//блок main
+.main {
+    padding-top: 52px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    :first-child {
+        margin-right: auto;
+    }
+}
+
+.link {
+    margin-left: 37px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;
+    display: inline-block;
+
+    &:after {
+        background-color: #202020;
+        display: block;
+        content: "";
+        height: 1px;
+        width: 0%;
+        transition: width .2s;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+// стилизация кнопок
+
+.btn__header {
+    margin-left: 37px;
+    padding: 2px 13px 4px 14px;
+    border-radius: 5px;
+}
+
+.btn__main {
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 110px;
+    padding: 16px 58px;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;  
+}
+
+.btn {
+    background-color: #5528ff;
+    color: #fff;
+    transition: .2s;
+    border: #5528ff solid 1px;
+
+    &:hover {
+        background-color: #fff;
+        color: #5528ff;
+        border: #5528ff solid 1px;
+    }
+}
+
+h1 {
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 65px;
+    text-align: left;
+}
+
+.p__main {
+    width: 100%;
+    max-width: 745px;
+    margin-top: 35px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 51px;  
+    color: #4f4f4f;
+}
+
+// блок services
+
+.services {
+    border-top: #c2c2c2 solid 1px;
+}
+
+h2 {
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;  
+    color: #C2C2C2;  
+    position: relative;
+    top: -9px;
+}
+
+.s__r_1 {
+    margin-top: 100px;
+}
+
+.services__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    width: 500px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.s__f {
+    width: 150px;
+    height: 100%;
+}
+
+.services__foto_1 {   
+    background: url('../img/smartphone.png') no-repeat center;
+}
+
+.services__foto_2 {
+    background: url('../img/monitor.png') no-repeat center;
+}
+
+.services__foto_3 {
+    background: url('../img/layers.png') no-repeat center;
+}
+
+.services__foto_4 {
+    background: url('../img/test.png') no-repeat center;
+}
+
+h3 {
+    margin-bottom: 17px;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.services__p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #B2B2B2;
+
+}
+
+// блок clients
+
+.clients {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    border-top: #c2c2c2 solid 1px;
+}
+
+.clients__grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+}
+
+.cl__logo {
+    justify-self: center;
+}
+
+// блок team
+
+.team {
+    border-top: #c2c2c2 solid 1px;
+}
+
+.team__grid {
+    margin-top: 100px;
+    margin-bottom: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+}
+
+.team__person {
+    display: flex;
+    align-items: center;
+}
+
+.team__img {
+    border-radius: 50%;
+    margin-right: 35px;
+    transition: .2s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.team__p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #b2b2b2;
+}
+
+// блок footer 
+
+.footer {
+    height: 100px;
+    padding-top: 20px;
+    background-color: #f7f7f7;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B2B2B2;
+}
+
+.footer__icons {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+@import "media.less";
